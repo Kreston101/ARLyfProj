@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class MoveTile : MonoBehaviour
 {
     public Button buttonUp, buttonDown, buttonLeft, buttonRight;
+    public Transform correctPos;
+    public bool inPlace = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,14 @@ public class MoveTile : MonoBehaviour
     void Update()
     {
         checkPos();
+        if (transform.position == correctPos.position)
+        {
+            inPlace = true;
+        }
+        else
+        {
+            inPlace = false;
+        }
     }
 
     public void checkPos()
