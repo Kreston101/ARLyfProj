@@ -1,2 +1,2 @@
-# AR_TRIAL
-ar test with vuforia
+# AR_LYF_Project
+ar test slifing puzzle game built with unity using vuforia
